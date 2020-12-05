@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="login.css">
+<title>login</title>
+</head>
+
+<body>
+
+<div class="loginbox">
+<img src="log.png" class="log">
+<h1><center>LOGIN</center></h1>
+
+<form>
+<p>Username</p>
+<input type="text" id="username" name="username" placeholder="enter your username">
+
+<p>Password</p>
+<input type="password" id="password" name="" placeholder="enter your password">
+
+                        <input type="submit" name="" value="USER LOGIN" onclick="login()">
+
+<a href="guest.html"><p align="center">GUEST LOGIN</a></p>
+<br>
+<a href="#">forgot password</a>
+<br>
+<a href="#">create a new account</a>
+
+<script>
+function login()
+    {
+       var a=document.getElementById('username').value
+       var b=document.getElementById('password').value
+if(a=="sachin" ||  b=="kadyan" || a=="prince" ||  b=="patel" || a=="anurag" ||  b=="rohikar" || a=="md" ||  b=="shahil")
+   {
+      window.open("hms.html");
+   }
+else
+   {
+      alert("wrong username/password");
+   }
+    }
+</script>
+</body>
